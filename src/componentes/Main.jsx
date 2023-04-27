@@ -14,21 +14,23 @@ export default function Main() {
 
   const mapeo = sliced.map((card) => {
     return (
-      <Card
-        key={card.id}
-        title={card.title}
-        description={card.description}
-        date={card.date}
-        imgUrl2={card.imgUrl2}
-      />
+      <>
+        <Card
+          key={card.id}
+          title={card.title}
+          description={card.description}
+          date={card.date}
+          imgUrl2={card.imgUrl2}
+        />
+      </>
     );
   });
 
   return (
     <>
       <main className="container-main">{mapeo}</main>
-      <button onClick={handleNumCards}>
-        <p className="view-more">View More</p>
+      <button className="btn" onClick={handleNumCards}>
+        View More
       </button>
     </>
   );
