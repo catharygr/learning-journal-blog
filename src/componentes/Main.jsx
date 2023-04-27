@@ -1,21 +1,35 @@
-import React from "react";
+// import React from "react";
 import Card from "./Card";
-import { Link } from "react-router-dom";
+import data from "../data";
+import { useState } from "react";
 
 export default function Main() {
+  const [numCards, setNumcards] = useState(6);
+  const ordenar = [...data];
+  const sliced = ordenar.sort((a, b) => b.date - a.date).slice(0, numCards);
+
+  function handleNumCards() {
+    setNumcards((oldNum) => oldNum + 3);
+  }
+
+  const mapeo = sliced.map((card) => {
+    return (
+      <Card
+        key={card.id}
+        title={card.title}
+        description={card.description}
+        date={card.date}
+        imgUrl2={card.imgUrl2}
+      />
+    );
+  });
+
   return (
     <>
-      <main className="container-main">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </main>
-      <Link to="/">
+      <main className="container-main">{mapeo}</main>
+      <button onClick={handleNumCards}>
         <p className="view-more">View More</p>
-      </Link>
+      </button>
     </>
   );
 }

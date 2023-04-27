@@ -15,8 +15,15 @@ body,
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
+
+.img-aspect-ratio {
+  aspect-ratio: 5 / 3;
+  overflow: hidden;
+  object-fit: cover;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -131,7 +138,7 @@ h4 {
 
 @media (min-width: 42rem) {
   .container-main {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 2rem;
   }

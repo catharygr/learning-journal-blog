@@ -1,10 +1,12 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import Hero from "./Hero";
+import Main from "./Main";
 
 export default function Home() {
   return (
     <div>
-      <h4>Home</h4>
+      <Hero />
+      <Main />
     </div>
   );
 }

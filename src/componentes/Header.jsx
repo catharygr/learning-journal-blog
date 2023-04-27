@@ -1,6 +1,4 @@
-import React from "react";
-import Home from "./Home";
-import About from "./About";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -14,8 +12,8 @@ export default function Header() {
         <h1 className="ff-title fs-700">My Learning Journal</h1>
       </div>
       <div className="nav-container">
-        <Home />
-        <About />
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="about">About me</NavLink>
       </div>
     </header>
   );
