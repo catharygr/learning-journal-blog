@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 
-export default function Card({ title, date, description, imgUrl2 }) {
+import { Link } from "react-router-dom";
+
+export default function Card({ title, date, description, imgUrl2, id }) {
   const fecha = new Date(date);
   return (
     <div className="card">
@@ -8,7 +10,9 @@ export default function Card({ title, date, description, imgUrl2 }) {
         <img src={imgUrl2} alt="Ordenador al lado de una planta" />
       </div>
       <p>{fecha.toLocaleDateString()}</p>
-      <h2>{title}</h2>
+      <Link to={`blog/${id}`}>
+        <h2>{title}</h2>
+      </Link>
       <p>{description}</p>
     </div>
   );

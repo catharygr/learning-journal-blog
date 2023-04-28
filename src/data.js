@@ -5,7 +5,7 @@ export default [
     title: "Blog one",
     description:
       " I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
-    imgUrl2: "assets/image/article-image-08.png",
+    imgUrl2: "/assets/image/article-image-08.png",
   },
   {
     id: "2",
@@ -13,7 +13,7 @@ export default [
     title: "Blog two",
     description:
       " I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
-    imgUrl2: "assets/image/article-image-04.png",
+    imgUrl2: "/assets/image/article-image-04.png",
   },
   {
     id: "3",
@@ -21,7 +21,7 @@ export default [
     title: "Blog three",
     description:
       " I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
-    imgUrl2: "assets/image/article-image-05.png",
+    imgUrl2: "/assets/image/article-image-05.png",
   },
   {
     id: "4",
@@ -29,7 +29,7 @@ export default [
     title: "Blog four",
     description:
       " I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
-    imgUrl2: "assets/image/article-image-03.png",
+    imgUrl2: "/assets/image/article-image-03.png",
   },
   {
     id: "5",
@@ -37,7 +37,7 @@ export default [
     title: "Blog five",
     description:
       " I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
-    imgUrl2: "assets/image/article-image-01.png",
+    imgUrl2: "/assets/image/article-image-01.png",
   },
   {
     id: "6",
@@ -45,7 +45,7 @@ export default [
     title: "Blog six",
     description:
       " I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
-    imgUrl2: "assets/image/article-image-02.png",
+    imgUrl2: "/assets/image/article-image-02.png",
   },
   {
     id: "7",
@@ -53,7 +53,7 @@ export default [
     title: "Blog one",
     description:
       " I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
-    imgUrl2: "assets/image/article-image-08.png",
+    imgUrl2: "/assets/image/article-image-08.png",
   },
   {
     id: "8",
@@ -61,7 +61,7 @@ export default [
     title: "Blog two",
     description:
       " I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
-    imgUrl2: "assets/image/article-image-04.png",
+    imgUrl2: "/assets/image/article-image-04.png",
   },
   {
     id: "9",
@@ -69,7 +69,7 @@ export default [
     title: "Blog three",
     description:
       " I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
-    imgUrl2: "assets/image/article-image-05.png",
+    imgUrl2: "/assets/image/article-image-05.png",
   },
   {
     id: "10",
@@ -77,7 +77,7 @@ export default [
     title: "Blog four",
     description:
       " I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
-    imgUrl2: "assets/image/article-image-03.png",
+    imgUrl2: "/assets/image/article-image-03.png",
   },
   {
     id: "11",
@@ -85,7 +85,7 @@ export default [
     title: "Blog five",
     description:
       " I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
-    imgUrl2: "assets/image/article-image-01.png",
+    imgUrl2: "/assets/image/article-image-01.png",
   },
   {
     id: "12",
@@ -93,6 +93,6 @@ export default [
     title: "Blog six",
     description:
       " I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
-    imgUrl2: "assets/image/article-image-02.png",
+    imgUrl2: "/assets/image/article-image-02.png",
   },
 ];

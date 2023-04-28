@@ -13,11 +13,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeLayout />}>
             <Route index element={<Home />} />
-            <Route path="blog" element={<BlogLayout />}>
-              <Route path="blog/:id" element={<BlogDetails />} />
-            </Route>
+            {/* <Route path="blog" element={<BlogLayout />} /> */}
+            <Route path="blog/:id" element={<BlogDetails />} />
+            <Route path="about" element={<About />} />
           </Route>
-          <Route path="about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </>

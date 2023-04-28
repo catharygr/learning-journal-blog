@@ -21,6 +21,7 @@ export default function Main() {
           description={card.description}
           date={card.date}
           imgUrl2={card.imgUrl2}
+          id={card.id}
         />
       </>
     );

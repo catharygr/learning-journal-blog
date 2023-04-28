@@ -1,24 +1,20 @@
 import data from "../data";
-import { Link, useParams } from "react-router-dom";
-import Card from "./Card";
+import { useParams } from "react-router-dom";
 
-export default function CardDetails() {
+export default function BlogDetails() {
   const params = useParams();
   const blogs = data.find((blog) => blog.id === params.id);
-  console.log(blogs);
+  const fecha = new Date(blogs.date);
+
   return (
     <>
-      <Link to="/">
-        <Card key={blogs.id} id={blogs.id} />
-      </Link>
-      <p>Hola</p>
       <div className="card">
+        <p>{fecha.toLocaleDateString()}</p>
+        <h2>{blogs.title}</h2>
+        <p>{blogs.description}</p>
         <div className="img-aspect-ratio">
           <img src={blogs.imgUrl2} alt="Ordenador al lado de una planta" />
         </div>
-        <p>{blogs.fecha.toLocaleDateString()}</p>
-        <h2>{blogs.title}</h2>
-        <p>{blogs.description}</p>
       </div>
     </>
   );
