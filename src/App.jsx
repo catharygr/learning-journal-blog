@@ -3,7 +3,7 @@ import "/style.css";
 import HomeLayout from "./componentes/HomeLayout";
 import Home from "./componentes/Home";
 import About from "./componentes/About";
-import BlogLayout from "./componentes/BlogLayout";
+
 import BlogDetails from "./componentes/BlogDetails";
 
 function App() {
