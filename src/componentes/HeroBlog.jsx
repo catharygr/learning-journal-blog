@@ -1,6 +1,6 @@
-export default function Hero() {
+export default function HeroBlog() {
   return (
-    <div className="hero-container">
+    <div className="hero-blog">
       <p>July 22, 2023</p>
       <h2>My new journey as a bootcamp student.</h2>
       <p>

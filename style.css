@@ -150,6 +150,29 @@ h1 {
     font-size: 1.5rem;
   }
 }
+
+/* ************************************ */
+/* HeroBlog Componente */
+/* ************************************ */
+
+.hero-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 2rem;
+  color: white;
+  width: 100%;
+  height: 350px;
+}
+
+@media (min-width: 42rem) {
+  .hero-blog {
+    height: 550px;
+    padding-bottom: 4rem;
+    font-size: 2rem;
+  }
+}
 /* ************************************ */
 /* Footer Componente */
 /* ************************************ */
