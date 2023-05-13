@@ -9,13 +9,17 @@ export default function BlogDetails() {
 
   return (
     <div>
-      <Hero />
-      <div className="card">
-        <p>{fecha.toLocaleDateString()}</p>
-        <h2>{blogs.title}</h2>
-        <p>{blogs.description}</p>
+      <Hero
+        title={blogs?.title}
+        date={blogs?.fecha.toLocaleDateString}
+        description={blogs?.description}
+      />
+      <div className="">
+        <p>{fecha?.toLocaleDateString()}</p>
+        <h2>{blogs?.title}</h2>
+        <p>{blogs?.description}</p>
         <div className="img-aspect-ratio">
-          <img src={blogs.imgUrl2} alt="Ordenador al lado de una planta" />
+          <img src={blogs?.imgUrl2} alt={blogs?.title} />
         </div>
       </div>
     </div>

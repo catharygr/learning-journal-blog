@@ -1,13 +1,10 @@
-export default function Hero() {
+/* eslint-disable react/prop-types */
+export default function Hero({ title, date, description }) {
   return (
     <div className="hero-container">
-      <p>July 22, 2023</p>
-      <h2>My new journey as a bootcamp student.</h2>
-      <p>
-        After several months of learning in the Frontend Developer Career Path,
-        I am have made the big jump over to the Bootcamp to get expert code
-        reviews of my Solo Projects projects and meet like-minded peers.
-      </p>
+      <p>{date}</p>
+      <h2>{title}</h2>
+      <p>{description}</p>
     </div>
   );
 }
