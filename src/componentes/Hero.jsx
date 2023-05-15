@@ -1,13 +1,16 @@
+import data from "../data";
+
 export default function Hero() {
+  const ordenar = [...data];
+  const sliced = ordenar.sort((a, b) => b.date - a.date).slice(0, 1);
+  const fecha = new Date(sliced[0].date);
+  console.log(fecha);
+
   return (
     <div className="hero-container">
-      <p>July 22, 2023</p>
-      <h2>My new journey as a bootcamp student.</h2>
-      <p>
-        After several months of learning in the Frontend Developer Career Path,
-        I am have made the big jump over to the Bootcamp to get expert code
-        reviews of my Solo Projects projects and meet like-minded peers.
-      </p>
+      <p>{fecha.toLocaleDateString()}</p>
+      <h2>{sliced[0].title}</h2>
+      <p>{sliced[0].description}</p>
     </div>
   );
 }

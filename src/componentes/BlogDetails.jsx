@@ -1,6 +1,7 @@
 import data from "../data";
 import { useParams } from "react-router-dom";
-import HeroBlog from "./HeroBlog";
+
+import BlogMain from "./BlogMain";
 
 export default function BlogDetails() {
   const params = useParams();
@@ -9,7 +10,6 @@ export default function BlogDetails() {
 
   return (
     <div>
-      <HeroBlog />
       <div className="">
         <p>{fecha.toLocaleDateString()}</p>
         <h2>{blogs.title}</h2>
@@ -17,7 +17,9 @@ export default function BlogDetails() {
         <div className="img-aspect-ratio">
           <img src={blogs.imgUrl2} alt={blogs.title} />
         </div>
+        <p>{blogs.text}</p>
       </div>
+      <BlogMain />
     </div>
   );
 }

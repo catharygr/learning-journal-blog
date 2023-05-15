@@ -1,16 +1,13 @@
+/* eslint-disable no-unused-vars */
 // import React from "react";
 import Card from "./Card";
 import data from "../data";
 import { useState } from "react";
 
-export default function Main() {
-  const [numCards, setNumcards] = useState(7);
+export default function BlogMain() {
+  const [numCards, setNumcards] = useState(3);
   const ordenar = [...data];
-  const sliced = ordenar.sort((a, b) => b.date - a.date).slice(1, numCards);
-
-  function handleNumCards() {
-    setNumcards((oldNum) => oldNum + 3);
-  }
+  const sliced = ordenar.sort((a, b) => b.date - a.date).slice(0, numCards);
 
   const mapeo = sliced.map((card) => {
     return (
@@ -30,9 +27,6 @@ export default function Main() {
   return (
     <>
       <main className="container-main">{mapeo}</main>
-      <button className="btn" onClick={handleNumCards}>
-        View More
-      </button>
     </>
   );
 }
