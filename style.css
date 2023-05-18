@@ -113,7 +113,7 @@ h1 {
   .hero-container {
     height: 550px;
     padding-bottom: 4rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -138,6 +138,11 @@ h1 {
   margin: 0 auto;
   margin-bottom: 1rem;
   cursor: pointer;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: whitesmoke;
 }
 
 @media (min-width: 42rem) {
@@ -176,6 +181,25 @@ h1 {
 /* ************************************ */
 /* BlogDetails Componente */
 /* ************************************ */
+
+.container-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 2rem;
+}
+.post {
+  text-align: center;
+}
+
+@media (min-width: 42rem) {
+  .container-blog {
+    /* height: 550px; */
+    padding-bottom: 4rem;
+    font-size: 1.5rem;
+  }
+}
 
 /* ************************************ */
 /* Footer Componente */

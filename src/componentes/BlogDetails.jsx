@@ -8,21 +8,20 @@ export default function BlogDetails() {
   const blogs = data.find((blog) => blog.id === params.id);
   const fecha = new Date(blogs.date);
 
-  q;
-  const descriptionMD = blogs.description.replace(/\\n\\n/g, "\n\n");
+  const descriptionMD = blogs.text.replace(/\\n\\n/g, "\n\n");
 
   return (
     <div>
       <div className="container-blog">
         <p className="fecha-blog">{fecha.toLocaleDateString()}</p>
         <h2>{blogs.title}</h2>
-        <ReactMarkdown>{descriptionMD}</ReactMarkdown>
         <p className="blog-description">{blogs.description}</p>
         <div className="img-blog">
           <img src={blogs.imgUrl2} alt={blogs.title} />
         </div>
-        <p>{blogs.text}</p>
+        <ReactMarkdown>{descriptionMD}</ReactMarkdown>
       </div>
+      <h2 className="post">Recent posts</h2>
       <BlogMain />
     </div>
   );
