@@ -13,13 +13,15 @@ export default function BlogDetails() {
   return (
     <div>
       <div className="container-blog">
-        <p className="fecha-blog">{fecha.toLocaleDateString()}</p>
-        <h2>{blogs.title}</h2>
-        <p className="blog-description">{blogs.description}</p>
+        <div className="details-blog">
+          <p className="fecha-blog">{fecha.toLocaleDateString()}</p>
+          <h2>{blogs.title}</h2>
+          <p className="blog-description">{blogs.description}</p>
+        </div>
         <div className="img-blog">
           <img src={blogs.imgUrl2} alt={blogs.title} />
         </div>
-        <ReactMarkdown>{descriptionMD}</ReactMarkdown>
+        <ReactMarkdown className="blog-text">{descriptionMD}</ReactMarkdown>
       </div>
       <h2 className="post">Recent posts</h2>
       <BlogMain />
