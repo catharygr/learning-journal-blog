@@ -15,7 +15,7 @@ export default function BlogDetails() {
       <div className="container-blog">
         <div className="details-blog">
           <p className="fecha-blog">{fecha.toLocaleDateString()}</p>
-          <h2>{blogs.title}</h2>
+          <h2 className="title-blog">{blogs.title}</h2>
           <p className="blog-description">{blogs.description}</p>
         </div>
         <div className="img-blog">
